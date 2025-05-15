@@ -17,8 +17,6 @@ function drawScreen () {
     if (display != _2smiley) {
         if (display == _1X) {
             basic.showIcon(IconNames.No)
-        } else if (display == _2smiley) {
-        	
         } else if (display == _3dB) {
             basic.showNumber(radio.receivedPacket(RadioPacketProperty.SignalStrength))
         } else {

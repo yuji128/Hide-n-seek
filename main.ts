@@ -41,11 +41,16 @@ radio.setGroup(1)
 myID = 8
 display = _0graph
 loops.everyInterval(500, function () {
-    drawScreen()
-    counter += 1
-    if (counter >= 2) {
-        display = _1X
+    if (display == _2smiley) {
         drawScreen()
+    } else {
+        display = _0graph
+        drawScreen()
+        counter += 1
+        if (counter >= 2) {
+            display = _1X
+            drawScreen()
+        }
     }
 })
 basic.forever(function () {
